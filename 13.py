@@ -3,13 +3,8 @@ import numpy as np
 import math as m
 
 #***********
-<<<<<<< HEAD
-x= [i for i in list(np.arange(0,15,0.05))]
-y= [m.sin(i) for i in list(np.arange(0,15,0.05))]
-=======
 x= [i for i in list(np.arange(0,20,0.05))]
 y= [m.sin(i) for i in list(np.arange(0,20,0.05))]
->>>>>>> c7791c941fd996a6ebf78bb2a41ee15944966e00
 pl.plot(x,y)
 pl.xlabel("x-axis")
 pl.ylabel("y-axis")
@@ -17,13 +12,8 @@ pl.title("Sine Curve")
 pl.show()
 
 #***************
-<<<<<<< HEAD
 x= [i for i in list(np.arange(0,15,0.05))]
 y= [m.cos(i) for i in list(np.arange(0,15,0.05))]
-=======
-x= [i for i in list(np.arange(0,13,0.05))]
-y= [m.cos(i) for i in list(np.arange(0,13,0.05))]
->>>>>>> c7791c941fd996a6ebf78bb2a41ee15944966e00
 pl.plot(x,y)
 pl.xlabel("x-axis")
 pl.ylabel("y-axis")

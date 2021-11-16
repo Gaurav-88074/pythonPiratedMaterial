@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 from  Q3 import factorial as m
-=======
-from Q3 import factorial as m
->>>>>>> c7791c941fd996a6ebf78bb2a41ee15944966e00
 def compute(x):
     res =1
     chk =1
