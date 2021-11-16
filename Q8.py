@@ -1,16 +1,10 @@
 def menu():
-<<<<<<< HEAD
     print("1.To check all elemnts are numbers")
     print("2.Count number of numeric value")
-=======
-    print("1.To check all elements are numbers")
-    print("2.Count number of numeric odd value")
->>>>>>> c7791c941fd996a6ebf78bb2a41ee15944966e00
     print("3.Display largest string")
     print("4.Display list in reverse form")
     print("5.Find specific element in element")
     print("6.Remove specific element in element")
-<<<<<<< HEAD
     print("7.sort list in descending order ")
     print("8.Accept two list and find comment elements")
 
@@ -66,64 +60,6 @@ def line():
 
 
 def execute():
-=======
-    print("7.Sort list in descending order ")
-    print("8.Accept two list and find common elements")
-
-def choice():
-    c = int(input("Enter your choice [1-8] : "))
-    return c
-
-def choice1(List):
-    for i in List:
-        if i.isdigit() == False:
-            print("False!!")
-            return False
-    print(True)
-    return True
-
-def choice2(List):
-    res = 0
-    for i in List:
-        if i.isdigit() and int(i) % 2 != 0:
-            res += 1
-    print("Number of odd numeric values :", res)
-
-def choice3(List):
-    print("Largest string is: ", max(List))
-
-def choice4(List):
-    print("")
-    print(list(reversed(List)))
-
-def choice5(List):
-    char = str(input("Enter specific element : "))
-    if char in List:
-        print("ELement present at index : ", List.index(char))
-
-def choice6(List):
-    char = str(input("Enter specific element : "))
-    if char in List:
-        List.remove(char)
-    print("done!")
-
-def choice7(List):
-    List = list(reversed(sorted(List)))
-    print(List)
-
-def choice8(List1, List2):
-    res = []
-    for i in List1:
-        if i in List2:
-            res.append(i)
-    print(List1, List1)
-    print(res)
-
-def line():
-    print("~~~~~~~~")
-
-def execute(List):
->>>>>>> c7791c941fd996a6ebf78bb2a41ee15944966e00
     line()
     menu()
     line()
