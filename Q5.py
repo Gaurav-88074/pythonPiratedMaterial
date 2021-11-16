@@ -9,6 +9,7 @@ def compute(x):
             res-=(i/m(i))
         chk+=1
     return res
+    
 if __name__ == '__main__':
     n  =int(input("Enter the value of n : "))
     print(compute(n))
