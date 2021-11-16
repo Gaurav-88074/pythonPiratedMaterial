@@ -20,8 +20,10 @@ def fabonaciiSeries(range,result=[],i=0):
     else:
         result.append(fibo(i))
         return fabonaciiSeries(range,result,i+1)
-userInput = int(input("Enter the range : "))
-fiboList = fabonaciiSeries(userInput+1)
-print(f"Fibonacii Sequence : {fiboList}")
-factList = factorialOfFiboSequence(fiboList)
-print(f"Factorial Sequence : {factList}")
+if __name__ == '__main__':
+    
+    userInput = int(input("Enter the range : "))
+    fiboList = fabonaciiSeries(userInput+1)
+    print(f"Fibonacii Sequence : {fiboList}")
+    factList = factorialOfFiboSequence(fiboList)
+    print(f"Factorial Sequence : {factList}")
