@@ -21,17 +21,10 @@ def fabonaciiSeries(range,result=[],i=0):
         result.append(fibo(i))
         return fabonaciiSeries(range,result,i+1)
 if __name__ == '__main__':
-<<<<<<< HEAD
-=======
-    
->>>>>>> c7791c941fd996a6ebf78bb2a41ee15944966e00
     userInput = int(input("Enter the range : "))
     fiboList = fabonaciiSeries(userInput+1)
     print(f"Fibonacii Sequence : {fiboList}")
     factList = factorialOfFiboSequence(fiboList)
     print(f"Factorial Sequence : {factList}")
-<<<<<<< HEAD
 
     
-=======
->>>>>>> c7791c941fd996a6ebf78bb2a41ee15944966e00
