@@ -12,8 +12,8 @@ pl.title("Sine Curve")
 pl.show()
 
 #***************
-x= [i for i in list(np.arange(0,13,0.05))]
-y= [m.cos(i) for i in list(np.arange(0,13,0.05))]
+x= [i for i in list(np.arange(0,15,0.05))]
+y= [m.cos(i) for i in list(np.arange(0,15,0.05))]
 pl.plot(x,y)
 pl.xlabel("x-axis")
 pl.ylabel("y-axis")
