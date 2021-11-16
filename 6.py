@@ -2,12 +2,10 @@ def evenTuple(userTuple):
     res = [i for i in userTuple if i % 2 == 0]
     return tuple(res)
 
-
 def concat(firstTuple, secondTuple):
     res = [i for i in firstTuple]
     res.extend([i for i in secondTuple])
     return tuple(res)
-
 
 def maxAndMin(userTuple):
     res = list(userTuple)

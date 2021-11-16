@@ -1,4 +1,6 @@
 from Q3 import factorial as m
+
+
 def compute(x):
     res =1
     chk =1
