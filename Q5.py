@@ -1,16 +1,14 @@
-from  Q3 import factorial as m
-def compute(x):
-    res =1
-    chk =1
-    for i in range(2,x+1,2):
-        if chk%2==0:
-            res+=(i/m(i))
-        else:
-            res-=(i/m(i))
-        chk+=1
-    return res
-    
+from Q3 import factorial
+
+def compute(x, n):
+    result = 0
+    for i in range(1, n+1):
+        m = i-1
+        result = result + ((((-1)**m) * (x**(2*m)))/factorial(2*m))
+    return result
+
+
 if __name__ == '__main__':
-    n  =int(input("Enter the value of n : "))
-    print(compute(n))
-    
+    n = int(input("Enter the value of n : "))
+    x = int(input("Enter value of x: "))
+    print(compute(x, n))

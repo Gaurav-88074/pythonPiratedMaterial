@@ -7,7 +7,7 @@ def menu():
     print("5.Palindrome or not?")
 
 def choice():
-    c = int(input("Enter your choice [1-5] :"))
+    c = int(input("Enter your choice [1-5] : "))
     return c
 
 def choice1():
@@ -36,7 +36,21 @@ def choice3():
 
 def choice4():
     string = str(input("Enter sentence : "))
-    count = len(string.split(" "))
+    strippedString = string.strip()     #removes whitespace from start and end
+    previousCharWasSpace = False
+    count = 0
+    if strippedString == "":
+        print(count)
+        return
+    for i in strippedString:
+        if i != " ":
+            previousCharWasSpace = False
+
+        elif not previousCharWasSpace:          
+            count+=1
+            previousCharWasSpace = True   
+
+    count+=1        #for last word
     print(count)
 
 def choice5():

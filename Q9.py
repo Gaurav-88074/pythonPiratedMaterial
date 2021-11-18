@@ -1,32 +1,27 @@
-def insertDetails(obj, name, marks):
-    obj[name] = marks
-
 def userInput(obj):
     marks = list()
     name  = str(input("Enter the name of student : "))
     for i in range(4):
         value = int(input(f"Enter marks of subject {i+1} : "))
         marks.append(value)
-    insertDetails(obj,name,marks)
+    obj[name] = marks
     print()
-def getMax(obj,maxValue):
-    print()
-    for i in obj:
-        if sum(obj[i])==maxValue:
-            return i
-def display(obj):
+
+def scoredMax(obj):
     maxValue = 0
-    for i in obj:
-        print(f"{i} : {obj[i]} : {sum(obj[i])}")
-        maxValue = max(maxValue,sum(obj[i]))
-    return maxValue
+    for key in obj:
+        total = sum(obj[key])
+        if total > maxValue:
+            maxValue = total
+            student = key
+    return student
+
 if __name__ == '__main__':
     obj = dict()
-    for i in range(2):
+    n = int(input("Enter no of students: "))
+    for i in range(n):
         userInput(obj)
-    maxValue = display(obj)
-    name = getMax(obj,maxValue);
-    print(f"{name} [securing highest percentage]")
+    print(scoredMax(obj))
     
 
 
