@@ -86,6 +86,6 @@ if __name__ == '__main__':
     studentName = []
     size = int(input("How many students ? : "))
     for i  in range(size):
-        sName = str(input(f"Enter name of student : {i+1}"))
+        sName = str(input(f"Enter name of student : {i+1} "))
         studentName.append(sName)
     menu(studentName)
