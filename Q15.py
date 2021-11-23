@@ -18,9 +18,9 @@ class Student:
         res = "{0} : {1:.2f}".format(self.name,self.avg)
         return res
 
-student1 = Student("Gaurav",89,90,80)
-student2 = Student("Vision",77,99,60)
-student3 = Student("Maxx  ",81,50,100)
+student1 = Student("student1",89,40,80)
+student2 = Student("student2",77,99,60)
+student3 = Student("student3",81,20,50)
 
 print(student1)
 print()

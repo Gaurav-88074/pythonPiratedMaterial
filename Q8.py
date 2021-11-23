@@ -66,7 +66,6 @@ def execute():
     c = choice()
     if c == 1:
         line()
-<<<<<<< HEAD
         choice1()
         line()
         execute()
@@ -95,58 +94,3 @@ def execute():
 
 
 execute()
-=======
-        chk = choice1(List)
-        if chk:
-            choice2(List)
-        line()
-        execute(List)
-    elif c == 2:
-        line()
-        choice2(List)
-        line()
-        execute(List)
-    elif c == 3:
-        line()
-        choice3(List)
-        line()
-        execute(List)
-    elif c == 4:
-        line()
-        choice4(List)
-        line()
-        execute(List)
-    elif c == 5:
-        line()
-        choice5(List)
-        line()
-        execute(List)
-    elif c == 6:
-        line()
-        choice6(List)
-        line()
-        execute(List)
-    elif c == 7:
-        line()
-        choice7(List)
-        line()
-        execute(List)
-    elif c == 8:
-        line()
-        List1 = [1, 2, 3, 4, 5, 6]
-        List2 = [2, 3, 4, 5]
-        choice8(List1, List2)
-        line()
-        execute(List)
-    else:
-        return
-
-if __name__ == '__main__':
-    List = list()
-    a = int(input('Enter the number of items you want to input in the list: '))
-    i = 0
-    while i<a:
-        List.append(input(f'Enter the {i}th element of the list: '))
-        i +=1
-    execute(List)
->>>>>>> c7791c941fd996a6ebf78bb2a41ee15944966e00
