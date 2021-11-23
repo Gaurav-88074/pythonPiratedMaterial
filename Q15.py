@@ -17,6 +17,8 @@ class Student:
     def __str__(self) :
         res = "{0} : {1:.2f}".format(self.name,self.avg)
         return res
+    def __del__(self):
+        print("object deleted")
 
 student1 = Student("student1",89,40,80)
 student2 = Student("student2",77,99,60)
